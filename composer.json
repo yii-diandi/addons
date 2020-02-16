@@ -13,7 +13,7 @@
     },
     "autoload": {
         "psr-4": {
-            "firetech\\addons\\": ""
+            "diandi\\addons\\": ""
         }
     }
 }
