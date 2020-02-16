@@ -1,5 +1,5 @@
 {
-    "name": "diandi/addons",
+    "name": "yii-diandi/addons",
     "description": "子模块扩展",
     "type": "yii2-extension",
     "keywords": ["yii2", "extension"],
