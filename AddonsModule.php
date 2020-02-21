@@ -14,7 +14,7 @@ class AddonsModule extends \yii\base\Module
     public $addons = 'system';
 
 
-    public $layout = '@vendor/firetech/addons/views/layouts/main.php';
+    public $layout = '@vendor/yii-diandi/addons/views/layouts/main.php';
 
     /**
      *设置默认的控制器
@@ -27,7 +27,7 @@ class AddonsModule extends \yii\base\Module
      * @var string Main layout using for module. Default to layout of parent module.
      * Its used when `layout` set to 'left-menu', 'right-menu' or 'top-menu'.
      */
-    public $mainLayout = '@vendor/firetech/addons/views/layouts/main.php';
+    public $mainLayout = '@vendor/yii-diandi/addons/views/layouts/main.php';
 
     /**
      * 自动运行
@@ -52,4 +52,6 @@ class AddonsModule extends \yii\base\Module
         }
         $this->modules = $initmodule;
     }
+
+   
 }

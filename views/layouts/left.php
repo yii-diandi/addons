@@ -1,8 +1,8 @@
-<aside class="main-sidebar <?= \dmstr\helpers\AdminLteHelper::skinClass() ?>">
+<aside class="main-sidebar <?= \diandi\adminlte\AdminLteHelper::skinClass() ?>">
     <section class="sidebar">
         <?php
 
-        use mdm\admin\components\MenuHelper;
+        use diandi\admin\components\MenuHelper;
 
         $callback = function ($menu) {
             $data = json_decode($menu['data'], true);
@@ -21,7 +21,7 @@
             return  $return;
         };
         //这里我们对一开始写的菜单menu进行了优化
-        echo dmstr\widgets\Menu::widget([
+        echo diandi\adminlte\Menu::widget([
             'options' => ['class' => 'sidebar-menu tree', 'data-widget' => 'tree'],
             'items' => MenuHelper::getAssignedMenu(Yii::$app->user->id, null, $callback, ['is_sys' => 'addons', 'module_name' => $this->context->module->id]),
         ]);
